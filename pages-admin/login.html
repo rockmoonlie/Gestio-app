@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/school128.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Gestio</title>
+    </head>
+    <body>
+        <!-- admin login interface -->
+        <main>
+            <section class="title_logo_admin">
+                <div>
+                    <h5>Gestio</h5>
+                </div>
+                <div class="buttonReturn2">
+                    <a id="forLogin" href="/index.html"><img src="/img/back.png" width="22" height="22" alt=""></a>
+                    <a id="forMobile" href="/index.html"><img src="/img/return.png" width="22" height="22"  alt=""></a>
+                </div>
+            </section>
+            <section class="portal_inner_section_admin" >
+                <div class="Bienvenue_admin">
+                    <h1>Connexion</h1>
+                </div>
+                <div class="selection_input">
+                    <form>
+                        <div>
+                            <label for="identifiant">Identifiant</label>
+                            <input type="text" id="identifiant" name="identifiant" required>
+                        </div>
+                        <div>
+                            <label for="psswrd">Mot de passe</label>
+                            <input type="password" id="psswrd" name="psswrd" required pattern="[a-zA-Z0-9]">
+                        </div>
+                        <div class="button_parent_admin">
+                            <button type="submit"><a href="home.html" class="login">Se connecter</a></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

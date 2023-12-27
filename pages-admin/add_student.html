@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/school128.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Gestio</title>
+    </head>
+    <body>
+        <main class="homeHome">
+            <section class="top">
+                <h1>Connecté en tant qu'admin</h1>
+            </section>
+            <section class="header">
+                <div class="logo_sec">
+                    <div class="logo_interface">
+                        <h3>Gestio</h3>
+                    </div>
+                    <div class="buttonReturn">
+                        <a href="home.html"><img src="/img/back.png" width="22" height="22" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <section class="side_bar adding">
+                    <h1>Dashboard</h1>
+                    <ul>
+                        <li>
+                            <img src="../img/graduation-black.png"  width="29" height="29" alt="list">
+                            <p><a class="colorA" href="home.html">Liste des apprenants</a></p>
+                        </li>
+                        <li class="space_list activons">
+                            <img src="../img/add.png" width="25" height="25" alt="add">
+                            <p><a class="colorA" href="add_student.html">Ajouter un apprenant</a></p>
+                        </li>
+                        <li>
+                            <img src="../img/exit.png" width="25" height="25" alt="logout">
+                            <p><a class="colorA"  href="/index.html">Se déconnecter</a></p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="main_content">
+                    <div class="titre">
+                        <h1>Ajouter un apprenant</h1>
+                    </div>
+                    <div class="formul">
+                        <form action="" method="post">
+                            <div>
+                                <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom">
+                            </div>
+                            <div>
+                                <label for="sexe">Sexe</label>
+                                <select name="sexe" id="sexe"></select>
+                            </div>
+                            <div>
+                                <label for="téléphone">Téléphone</label>
+                                <input type="text" name="téléphone" id="téléphone">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="filière">Filière</label>
+                                <select name="filière" id="filière"></select>
+                            </div>
+                            <div>
+                                <label for="niveau">Niveau</label>
+                                <select name="niveau" id="niveau"></select>
+                            </div>
+                            <div>
+                                <label for="extra-scolaire">Activité extra-scolaire</label>
+                                <input type="text" name="extra-scolaire" id="extra-scolaire">
+                            </div>
+                            <div>
+                                <label for="photo">Photo</label>
+                                <input type="file" name="photo" id="photo">
+                            </div>
+                            <button type="submit">Ajouter</button>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
