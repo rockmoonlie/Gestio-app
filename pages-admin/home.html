@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/school128.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Gestio</title>
+    </head>
+    <body>
+        <main class="homeHome">
+            <section class="top">
+                <h1>Connecté en tant qu'admin</h1>
+            </section>
+            <section class="header">
+                <div class="logo_sec">
+                    <div class="logo_interface">
+                        <h3>Gestio</h3>
+                    </div>
+                </div>
+                <div class="inputsec">
+                    <div class="search">
+                        <input type="search" placeholder="Entrer le nom d'un apprenant" id="recherche">
+                        <button>
+                            <img id="barsearch" src="../img/search.png" width="29" alt="">
+                        </button>
+                    <!-- </div>
+                    <div class="bell">
+                        <img src="../img/bell.png" width="39" alt="">
+                    </div> -->
+                </div>
+            </section>
+            <section class="content">
+                <section class="side_bar">
+                    <h1>Dashboard</h1>
+                    <ul>
+                        <li class="activons">
+                            <img src="../img/graduation.png"  width="29" height="29" alt="list">
+                            <p><a href="#">Liste des apprenants</a></p>
+                        </li>
+                        <li class="space_list">
+                            <img src="../img/add-black.png" width="25" height="25" alt="add">
+                            <p><a class="colorA" href="/pages-admin/add_student.html">Ajouter un apprenant</a></p>
+                        </li>
+                        <li>
+                            <img src="../img/exit.png" width="25" height="25" alt="logout">
+                            <p><a class="colorA"  href="/index.html">Se déconnecter</a></p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="main_content">
+                    <div class="titre">
+                        <h1>Les Apprenants</h1>
+                    </div>
+                    <div class="hidden_menu">
+                            <input type="checkbox" name="select_deselect" id="select_deselect" class="biggercheck" onclick="checkAll()">
+                        <div class="shortcut">
+                            <img src="../img/delete.png"  width="18" height="18" alt="delete" title="Supprimer">
+                            <img src="../img/edit.png"  width="18" height="18" alt="edit" title="Modifier">
+                            <img src="../img/refresh.png"  width="18" alt="edit" title="Rafraichir">
+                        </div>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="checkboxes"></th>
+                                    <th>Identifiants</th>
+                                    <th>Noms</th>
+                                    <th>Sexe</th>
+                                    <th>Téléphone</th>
+                                    <th>Email</th>
+                                    <th>Filière</th>
+                                    <th>Niveau</th>
+                                    <th>Activité <br> extra-scolaire</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox1"></td>
+                                    <td>001</td>
+                                    <td><a href="profil.html">ABANG ELLA Jenniela</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox2"></td>
+                                    <td>002</td>
+                                    <td><a href="#">ABESSOLO Robert</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox3"></td>
+                                    <td>003</td>
+                                    <td><a href="#">ANGUE Sandrine</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox4"></td>
+                                    <td>004</td>
+                                    <td><a href="#">BIBANG-BI-NDONG Ferry</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox5"></td>
+                                    <td>005</td>
+                                    <td><a href="#">BUSHNELL Mickael</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox6"></td>
+                                    <td>006</td>
+                                    <td><a href="#">GUIKENZI Hermeline</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox7"></td>
+                                    <td>007</td>
+                                    <td><a href="#">HONDJIE Désiré</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox8"></td>
+                                    <td>008</td>
+                                    <td><a href="#">LENGOUBA calin</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox9"></td>
+                                    <td>009</td>
+                                    <td><a href="#">LIDIA Doriana</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox10"></td>
+                                    <td>010</td>
+                                    <td><a href="#">MADJINOU Firmine</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox11"></td>
+                                    <td>011</td>
+                                    <td><a href="#">MANGUIMISSOU Aron</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox12"></td>
+                                    <td>012</td>
+                                    <td><a href="#">MATOKA Nelle</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox13"></td>
+                                    <td>013</td>
+                                    <td><a href="#">MAYAYA Ronedy</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox14"></td>
+                                    <td>014</td>
+                                    <td><a href="#">MBA ALLOGO Benjamin</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox15"></td>
+                                    <td>015</td>
+                                    <td><a href="#">NDINGA Arsene</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr> 
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox16"></td>
+                                    <td>016</td>
+                                    <td><a href="#">NGOUA Stacy</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox17"></td>
+                                    <td>017</td>
+                                    <td><a href="#">NKOUKOU Céverine</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox18"></td>
+                                    <td>018</td>
+                                    <td><a href="#">NZE-EKOME Mathieu</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox19"></td>
+                                    <td>019</td>
+                                    <td><a href="#">PAMBOU Grâce</a></td>
+                                    <td>F</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkboxes"><input type="checkbox" name="option" id="checkbox20"></td>
+                                    <td>020</td>
+                                    <td><a href="#">SOUNGANI Yann-Elie</a></td>
+                                    <td>M</td>
+                                    <td>07700000</td>
+                                    <td>exemple@gmail.com</td>
+                                    <td>Développeur</td>
+                                    <td>01</td>
+                                    <td>N/B</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+            <section class="MenuFloat">
+                <div id="floatMenu">
+                    <a href="home.html"><img src="../img/home.png" alt="home"></a>
+                    <a href="add_student.html"><img src="../img/add-black.png" alt="add student"></a>
+                    <a href="../index.html"><img src="../img/exit.png" alt="log out"></a>
+                </div>
+            </section>
+        </main>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
