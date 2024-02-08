@@ -33,16 +33,33 @@ a{
     align-items: center;
     padding-right:20px ;
 }
-/* portal interface */
 
-main{
+.main-login{
     width: 100%;
+    display: flex;
 }
 
 .title_logo{
     height: 20vh;
     display: flex;
     align-items: center;
+}
+
+.login_side{
+    background:linear-gradient(0deg, rgba(229, 58, 58, 1) 15%, rgba(197, 17, 36, 1) 25%, rgba(165, 0, 15, 1) 40%, rgba(134, 0, 0, 1) 50%, rgba(102, 0, 0, 1) 65%, rgba(73, 0, 3, 1) 75%, rgba(42, 0, 1, 1) 90%, rgba(0, 0, 0, 1) 100%);
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    width: 55%;
+    padding-top: 30px;
+    background-image: url(/img/new-student.png);
+    background-size: cover;
 }
 
 .title_logo h5{
@@ -55,14 +72,6 @@ main{
     background-size: 100%;
 }
 
-.portal_inner_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 65vh;
-    justify-content: center;
-    text-align: center;
-}
 
 .button_parent{
     display: flex;
@@ -71,7 +80,7 @@ main{
 }
 
 .button_parent button{
-    width:326px;
+    width: 267px;
     height:61px;
     border:none;
     border-radius:0.5rem;
@@ -81,10 +90,6 @@ main{
     letter-spacing: 0.1rem;
 }
 
-.button_parent button:nth-child(2){
- background-color: #1E1E1E;
- color: #F6F6F6;
-}
 
 .login, .admin_button a{
     color: #F6F6F6;
@@ -100,7 +105,7 @@ main{
 }
 
 .Bienvenue h1{
-    font-size:2.2rem;
+    font-size:2rem;
     font-weight: 400;
     margin-bottom: 3.5rem;
 }
@@ -120,10 +125,18 @@ main{
 }
 
 .selection{
-    background-color: #E53A3A;
-    padding: 1.5rem 4.2rem 4.3rem 4.2rem;
+    padding: 1.5rem 4.2rem 1.5rem 4.2rem;
     border-radius: 0.5rem;
+    box-shadow: -1px 4px 8.2px 3px rgba(0, 0, 0, 0.25);
 }
+
+.selection form label{
+    color: #F6F6F6;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+
 
 /*admin login interface*/
 
@@ -143,8 +156,9 @@ form{
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 1.5rem;
+    gap: 2.5rem;
     justify-content: center;
+    
 }
 
 form div{
@@ -152,29 +166,23 @@ form div{
     flex-direction: column;
 }
 
-form div label{
-    font-size: 1.25rem;
-    font-weight: 500;
-}
 
 form div input{
     height: 61px;
-    border-radius:0.625rem ;
+    border-radius:0.2rem ;
     padding:0.625rem ;
     border: none;
     font-size: 1.25rem;
 }
 
-.selection_input{
-    background-color: #E53A3A;
-    padding: 1.5rem 4.2rem 2.563rem 4.2rem;
-    border-radius: 0.5rem;
+#identifiant, #psswrd {
+    background-color: #DFE0E2;
 }
-
 .Bienvenue_admin h1{
-    font-size:2.2rem;
+    font-size:2rem;
     font-weight: 400;
     margin-bottom: 2rem;
+    color: #F6F6F6;
 }
 
 .title_logo_admin{
@@ -206,7 +214,7 @@ form div input{
 .button_parent_admin button{
     background-color: #1E1E1E;
     color: #F6F6F6;
-    width:326px;
+    width: 363px;
     height:61px;
     border:none;
     border-radius:0.5rem;
@@ -252,13 +260,14 @@ form div input{
     padding-top: 5.8125rem;
     row-gap: 3.75rem;
     height:100vh;
-    background-color: #E53A3A;
+    background:linear-gradient(0deg, rgba(229, 58, 58, 1) 15%, rgba(197, 17, 36, 1) 25%, rgba(165, 0, 15, 1) 40%, rgba(134, 0, 0, 1) 50%, rgba(102, 0, 0, 1) 65%, rgba(73, 0, 3, 1) 75%, rgba(42, 0, 1, 1) 90%, rgba(0, 0, 0, 1) 100%);
    }
 
 .side_bar h1{
     font-size: 2.1875rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
+    color: #F6F6F6;
    }
 
 .side_bar ul{
@@ -356,11 +365,12 @@ th, td{
 }
 
 th{
-    background-color: #E53A3A;
+    background-color:  rgba(197, 17, 36, 1);
     font-size: 0.8rem;
     font-family: poppins;
     font-weight: 500;
     height:50px;
+    color: #F6F6F6;
 }
 
 
@@ -377,8 +387,7 @@ tbody tr{
 }
 
 tbody tr:hover{
-    background-color: #d42a2a;
-    color: white;
+    background-color: #9600071c;
 }
 
 .checkboxes{
@@ -397,7 +406,7 @@ tbody tr:hover{
 
 .table{
     overflow-y: scroll;
-    height:50vh;
+    height:53vh;
 }
 
 input.biggercheck{
@@ -419,7 +428,7 @@ input.biggercheck{
 }
 
 .colorA {
-    color: #000;
+    color:#F6F6F6;
 }
 
 .titre h1{
@@ -457,7 +466,7 @@ hr{
 }
 
 .studentId{
-    background: linear-gradient(180deg, #E53A3A 41.61%, rgba(160, 0, 0, 0.75) 75.83%, rgba(30, 30, 30, 0.87) 100%);
+    background:linear-gradient(0deg, rgba(229, 58, 58, 1) 15%, rgba(197, 17, 36, 1) 25%, rgba(165, 0, 15, 1) 40%, rgba(134, 0, 0, 1) 50%, rgba(102, 0, 0, 1) 65%, rgba(73, 0, 3, 1) 75%, rgba(42, 0, 1, 1) 90%, rgba(0, 0, 0, 1) 100%);
     width:668px;
     height: 457px;
     border-radius: 10px;
@@ -564,16 +573,16 @@ input[type="file"]{
     font-weight: 300;
 }
 
-.formul input[type="text"], input[type="email"], select{
+.formul input[type="text"], input[type="email"], select, input[type="file"]{
     width: 568px;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     border: none;
 }
 
 .formul{
-    background-color: #E53A3A;
+    background-color: rgba(197, 17, 36, 1);
     width: 756px;
     margin: 0 auto;
     border-radius: 5px;
@@ -589,515 +598,418 @@ input[type="file"]{
 }
 
 #floatMenu{
-    background-color: #E53A3A;
+    background-color:rgba(197, 17, 36, 1);
     height: 55px;
 }
 
 /* responsive */
 
+/* tablet */
+/*homedashboard*/
+@media screen and (max-width:884px){
+    .side_bar img{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+    }
+
+    .side_bar ul li>p{
+        font-size: 1rem;
+    }
+    .main-login_mobile{
+        display: none;
+    }
+
+    th{
+        padding: 0 10px 0 10px;
+        width: 10px;
+    }
+
+    tbody td{
+        padding: 0 10px 0 10px;
+    }
+
+    .side_bar h1{
+        font-size: 1.6rem;
+    }
+
+    .table{
+        height: 60vh;
+    }
+
+    .side_bar ul li {
+        gap: 1rem;
+    }
+
+    .formul {
+        background-color: rgba(197, 17, 36, 1);
+        width: 613px;
+        height: 650px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:800px){
+    .main-login_mobile{
+        display: none;
+    }
+
+    th{
+        padding: 0 10px 0 10px;
+        width: 10px;
+    }
+
+    tbody td{
+        padding: 0 10px 0 10px;
+    }
+
+    .side_bar h1{
+        font-size: 1.5rem;
+    }
+
+    .side_bar ul li>p{
+        font-size: 0.7rem;
+    }
+
+    .side_bar img{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+
+    .table{
+        height: 60vh;
+    }
+
+    .side_bar ul li {
+        gap: 1rem;
+    }
+
+    
+    .formul {
+        background-color: rgba(197, 17, 36, 1);
+        width: 538px;
+        height: 610px;
+        overflow-y: scroll;
+    }
+
+    form div {
+        width: 482px;
+    }
+
+    .formul input[type="text"], input[type="email"], select, input[type="file"] {
+        width: 478px;
+        font-size: 15px;
+    }
+
+    .formul form div label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:820px)and(max-width:834px){
+    .side_bar img{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+    }
+
+    .side_bar ul li>p{
+        font-size: 1rem;
+    }
+    .main-login_mobile{
+        display: none;
+    }
+
+    th{
+        padding: 0 10px 0 10px;
+        width: 10px;
+    }
+
+    tbody td{
+        padding: 0 10px 0 10px;
+    }
+
+    .side_bar h1{
+        font-size: 1.7rem;
+    }
+
+    .table{
+        height: 60vh;
+    }
+
+    .side_bar ul li {
+        gap: 1rem;
+    }
+}
+
+
 /*mobile*/
 
 /*index page*/
 
-@media screen and (min-width:300px) and (max-width:350px) {
-    .title_logo {
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
+ @media screen and (min-width:300px) and (max-width:350px) {
+    .Bienvenue h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+        width: 100%;
     }
 
-    .Bienvenue h1{
-        font-size: 14px;
-    }
-
-    .Bienvenue{
-        width: 300px;
-        margin-top: 90px;
-    }
-
-    .title_logo h5 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding-left: 1rem;
-        background-image: linear-gradient(180deg, #000 27.08%, #ED1717 89.57%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100%;
-    }
-
-    .button_parent button {
-        width: 173px;
-        height: 45px;
-        border: none;
-        border-radius: 0.5rem;
-        box-shadow: 0px 4px 7.8px 0px rgba(0, 0, 0, 0.25);
-        font-size: 1.25rem;
-        font-weight: 300;
-        letter-spacing: 0.1rem;
-    }
-
-    .selection {
-        background-color: #E53A3A;
-        padding: 20px 29px 20px 29px;
-        border-radius: 0.5rem;
-        margin: 0 auto;
-    }
-
-    .selection p{
-        font-size: 15px;
+    .Bienvenue {
+        width: 100%;
         text-align: center;
     }
 
-    .button_parent button a {
-        font-size: 12px;
+    .Bienvenue_admin h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: #F6F6F6;
     }
 
-    body{
-        padding-bottom: 107px;
-    }
-
-    .button_parent {
-        gap: 15px;
-    }
-
-}
-
-
-@media screen and (min-width:351px) and (max-width:360px) {
-    .Bienvenue h1{
-        font-size: 17px;
-    }
-
-    .Bienvenue{
-        width: 341px;
+    .login_side{
+        width: 100%;
         margin-top: 20px;
-    }
-
-    .selection p{
-        font-size: 19px;
-    }
-
-    .title_logo h5 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding-left: 0rem;
-        background-image: linear-gradient(180deg, #000 27.08%, #ED1717 89.57%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100%;
-    }
-
-    .title_logo{
-        margin-left: 24px;
-    }
-
-    .selection{
-        width: 300px;
-        height: 250px;
-        padding: 19px;
-    }
-
-    .button_parent{
-        justify-content: center;
-        gap: 19px;
-    }
-    .button_parent button{
-        width: 258px;
-    }
-
-    .button_parent button a {
-        font-size: 15px;
-    }
-
- }
-
-@media screen and (min-width:361px) and (max-width:375px) {
-    .Bienvenue h1{
-        font-size: 19px;
-    }
-
-    .Bienvenue{
-        width: 341px;
-        margin-top: 90px;
-    }
-
-    .selection p{
-        font-size: 19px;
-    }
-
-    .title_logo h5{
-        font-size: 24px;
-        padding: 0;
-    }
-
-    .title_logo{
-        margin-left: 27px;
-    }
-
-    .selection{
-        width: 320px;
-        height: 306px;
-        padding: 28px 21px 30px 21px;
-    }
-
-    .button_parent{
-        justify-content: center;
-        gap: 19px;
-    }
-    .button_parent button{
-        width: 278px;
-    }
-
-    .button_parent button a {
-        font-size: 17px;
-    }
- 
- }
-
- @media screen and (min-width:376px) and (max-width:430px) {
-    .Bienvenue h1{
-        font-size: 19px;
-    }
-
-    .Bienvenue{
-        width: 341px;
-        margin-top: 90px;
-    }
-
-    .selection p{
-        font-size: 19px;
-    }
-
-    .title_logo h5{
-        font-size: 24px;
-        padding: 0;
-    }
-
-    .title_logo{
-        margin-left: 27px;
-    }
-
-    .selection{
-        width: 332px;
-        height: 306px;
-        padding: 28px 21px 30px 21px;
-    }
-
-    .button_parent{
-        justify-content: center;
-    }
-    .button_parent button{
-        width: 290px;
-    }
-
-    .button_parent button a {
-        font-size: 17px;
-    }
- 
- }
- 
- /*
- /*
- /*
-
- /*login page*/
-
- @media screen and (min-width:300px) and (max-width:350px) {
-    .buttonReturn2 #forLogin{
-        display: none;
-    }
-
-    .title_logo_admin {
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        gap: 150px;
-    }
-
-    .title_logo_admin h5 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding-left: 1rem;
-        background-image: linear-gradient(180deg, #000 27.08%, #ED1717 89.57%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100%;
-    }
-
-    .Bienvenue_admin h1{
-        font-size: 25px;
-    }
-
-    .selection_input {
-        background-color: #E53A3A;
-        border-radius: 0.5rem;
-        margin: 0 auto;
-        width: 250px;
-        height: 300px;
-        padding: 20px 20px 30px 20px;
+        margin-bottom: 30px;
+        height: auto;
     }
 
     form {
         display: flex;
         flex-direction: column;
         text-align: left;
-        gap: 1rem;
+        gap: 2.5rem;
         justify-content: center;
+        width: 18rem;
     }
-
 
     form div input {
-        height: 45px;
-        border-radius: 0.625rem;
-        padding: 0.625rem;
-        border: none;
-        font-size: 1.25rem;
+        height: 51px;
     }
 
-    form div label {
+    .selection {
+        padding: 10px;
+    }
+
+    .selection form label {
+        color: #F6F6F6;
+        font-weight: 300;
         font-size: 1rem;
-        font-weight: 500;
     }
 
-    .button_parent_admin button {
-        width: 210px;
-        height:49px ;
-        margin-top: 20px;
+    .button_parent_admin{
+        width: 285px;
+        height:51px;
+        border:none;
     }
-    
-    .button_parent_admin button a{
-        font-size: 15px;
+
+    .button_parent_admin button{
+        width: 285px;
     }
+ 
  }
 
  @media screen and (min-width:351px) and (max-width:360px) {
-    .buttonReturn2 #forLogin{
-        display: none;
+    .Bienvenue h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+        width: 100%;
     }
 
-    .title_logo_admin {
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        gap: 214px;
+    .Bienvenue {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Bienvenue_admin h1 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: #F6F6F6;
+    }
+
+    .login_side{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: auto;
+        padding-bottom: 20px;
     }
 
     form {
         display: flex;
         flex-direction: column;
         text-align: left;
-        gap: 1rem;
+        gap: 2.5rem;
         justify-content: center;
+        width: 18rem;
     }
-
-    .title_logo_admin h5 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding-left: 1rem;
-        background-image: linear-gradient(180deg, #000 27.08%, #ED1717 89.57%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100%;
-    }
-
-    .Bienvenue_admin h1{
-        font-size: 25px;
-    }
-
-    .selection_input {
-        background-color: #E53A3A;
-        border-radius: 0.5rem;
-        margin: 0 auto;
-        width: 300px;
-        height: 290px;
-        padding: 20px 20px 30px 20px;
-    }
-
 
     form div input {
-        height: 45px;
-        border-radius: 0.625rem;
-        padding: 0.625rem;
-        border: none;
-        font-size: 1.25rem;
+        height: 51px;
     }
 
-    form div label {
+    .selection {
+        padding: 10px;
+    }
+
+    .selection form label {
+        color: #F6F6F6;
+        font-weight: 300;
         font-size: 1rem;
-        font-weight: 500;
     }
 
-    .button_parent_admin button {
-        width: 260px;
-        height:55px ;
-        margin-top: 20px;
-    }
-    
-    .button_parent_admin button a{
-        font-size: 18px;
+    .button_parent_admin{
+        width: 285px;
+        height:51px;
+        border:none;
     }
 
-    .portal_inner_section_admin {
-        height: 50vh;
+    .button_parent_admin button{
+        width: 285px;
     }
-
-    .button_parent_admin {
-        align-items: center;
-    }
+ 
  }
 
  @media screen and (min-width:361px) and (max-width:375px) {
-    .buttonReturn2 #forLogin{
-        display: none;
+    .Bienvenue h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 3.5rem;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .Bienvenue {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Bienvenue_admin h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: #F6F6F6;
+    }
+
+    .login_side{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        height: auto;
+        padding-bottom: 20px;
     }
 
     form {
         display: flex;
         flex-direction: column;
         text-align: left;
-        gap: 1rem;
+        gap: 2.5rem;
         justify-content: center;
+        width: 20rem;
+        padding-bottom: 10px;
     }
-
-    .title_logo_admin {
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        gap: 214px;
-    }
-
-    .title_logo_admin h5 {
-        font-size: 24px;
-        font-weight: 500;
-        padding-left: 1rem;
-        background-image: linear-gradient(180deg, #000 27.08%, #ED1717 89.57%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100%;
-    }
-
-    .Bienvenue_admin h1{
-        font-size: 30px;
-    }
-
-    .selection_input {
-        background-color: #E53A3A;
-        border-radius: 0.5rem;
-        margin: 0 auto;
-        width: 320px;
-        height: 310px;
-        padding: 20px 20px 30px 20px;
-    }
-
 
     form div input {
-        height: 50px;
-        border-radius: 0.625rem;
-        padding: 0.625rem;
-        border: none;
-        font-size: 1.25rem;
+        height: 51px;
     }
 
-    form div label {
-        font-size: 18px;
-        font-weight: 500;
+    .selection {
+        padding: 10px;
+        width: 21.5rem;
     }
 
-    .button_parent_admin button {
-        width: 280px;
-        height:55px ;
-        margin-top: 20px;
+    .selection form label {
+        color: #F6F6F6;
+        font-weight: 300;
+        font-size: 1.3rem;
     }
 
     .button_parent_admin{
-        align-items: center;
-    }
-    
-    .button_parent_admin button a{
-        font-size: 18px;
+        width: 285px;
+        height:51px;
+        border:none;
     }
 
-    .portal_inner_section_admin {
-        height: 60vh;
+    .button_parent_admin button{
+        width: 20rem;
     }
+ 
  }
 
  @media screen and (min-width:376px) and (max-width:430px) {
-    .buttonReturn2 #forLogin{
-        display: none;
+    .Bienvenue h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 3.5rem;
+        margin-top: 5rem;
+        width: 100%;
     }
 
-    .title_logo_admin {
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        gap: 234px;
+    .Bienvenue {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Bienvenue_admin h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: #F6F6F6;
+    }
+
+    .login_side{
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+        padding-bottom: 20px;
     }
 
     form {
         display: flex;
         flex-direction: column;
         text-align: left;
-        gap: 1rem;
+        gap: 2.5rem;
         justify-content: center;
+        width: 22.5rem;
+        padding-bottom: 10px;
     }
-
-    .title_logo_admin h5 {
-        font-size: 24px;
-        font-weight: 500;
-        padding-left: 1rem;
-        background-image: linear-gradient(180deg, #000 27.08%, #ED1717 89.57%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 100%;
-    }
-
-    .Bienvenue_admin h1{
-        font-size: 30px;
-    }
-
-    .selection_input {
-        background-color: #E53A3A;
-        border-radius: 0.5rem;
-        margin: 0 auto;
-        width: 350px;
-        height: 320px;
-        padding: 20px 20px 30px 20px;
-    }
-
 
     form div input {
-        height: 50px;
-        border-radius: 0.625rem;
-        padding: 0.625rem;
-        border: none;
-        font-size: 1.25rem;
+        height: 55px;
     }
 
-    form div label {
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-bottom: 5px;
+    .selection {
+        padding: 10px;
+        width: 24rem;
     }
 
-    .button_parent_admin button {
-        width: 310px;
-        height:55px ;
-        margin-top: 20px;
+    .selection form label {
+        color: #F6F6F6;
+        font-weight: 300;
+        font-size: 1.3rem;
     }
 
     .button_parent_admin{
-        align-items: center;
-    }
-    
-    .button_parent_admin button a{
-        font-size: 18px;
+        width: 285px;
+        height: 55px;
+        border:none;
     }
 
-    .portal_inner_section_admin {
-        height: 60vh;
+    .button_parent_admin button{
+        width: 22.5rem;
+       
     }
+
+    
  }
 
 /*
@@ -1112,7 +1024,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1217,7 +1129,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1326,7 +1238,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1434,7 +1346,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1615,7 +1527,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1710,7 +1622,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1805,7 +1717,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1900,7 +1812,7 @@ input[type="file"]{
 
     #floatMenu{
         display: flex;
-        background-color: #E53A3A;
+        background-color: rgba(197, 17, 36, 1);
         height: 50px;
         justify-content: space-around;
         align-items: center;
@@ -1910,6 +1822,188 @@ input[type="file"]{
         width: 100vw;
     }
 }
+
+/*add a student*/
+@media screen and (min-width:300px) and (max-width:350px) {
+    .titre-add-student{
+        padding: 0;
+        margin: 0 0 12px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titre-add-student h1{
+        font-size: 18px;
+    }
+
+    .logo-add{
+        display: none;
+    }
+
+    .return_add{
+        height: 15vh;
+    }
+
+    .formul{
+        width: 90%;
+        overflow-y: visible;
+        height: auto;
+    }
+
+    .formul input[type="text"], input[type="email"], select,input[type="file"]{
+        width:262px;
+    }
+
+    .formul button {
+        width: 262px;
+    }
+
+    .formul form{
+        background-color: rgba(197, 17, 36, 1);
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:351px) and (max-width:360px){
+    .titre-add-student{
+        padding: 0;
+        margin: 0 0 27px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titre-add-student h1{
+        font-size: 22px;
+    }
+
+    .logo-add{
+        display: none;
+    }
+
+    .return_add{
+        height: 9vh;
+    }
+
+    .formul{
+        width: 100%;
+        overflow-y:visible;
+        height: auto;
+    }
+
+    .formul form{
+        background-color: rgba(197, 17, 36, 1);
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .formul input[type="text"], input[type="email"], select,input[type="file"]{
+        width:290px;
+    }
+
+    .formul button {
+        width: 290px;
+    }
+
+    .formul form div label{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:361px) and (max-width:375px) {
+    .titre-add-student{
+        padding: 0;
+        margin: 0 0 27px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titre-add-student h1{
+        font-size: 22px;
+    }
+
+    .logo-add{
+        display: none;
+    }
+
+    .return_add{
+        height: 9vh;
+    }
+
+    .formul{
+        width: 90%;
+        overflow-y:visible;
+        height: auto;
+    }
+
+    .formul form{
+        background-color:rgba(197, 17, 36, 1);
+        padding-bottom: 10px;
+    }
+    .formul input[type="text"], input[type="email"], select,input[type="file"]{
+        width:290px;
+    }
+
+    .formul button {
+        width: 290px;
+    }
+
+    .formul form div label{
+        font-size: 20px;
+    }
+
+    .forAddStudent{
+        height: 130vh;
+    }
+
+}
+
+@media screen and (min-width:376px) and (max-width:430px) {
+    .forAddStudent{
+        height: 130vh;
+    }
+    .titre-add-student{
+        padding: 0;
+        margin: 0 0 27px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titre-add-student h1{
+        font-size: 22px;
+    }
+
+    .logo-add{
+        display: none;
+    }
+
+    .return_add{
+        height: 9vh;
+    }
+
+    .formul{
+        width: 90%;
+        overflow-y:visible;
+        height: auto;
+    }
+
+    .formul form{
+        background-color: rgba(197, 17, 36, 1);
+        padding-bottom: 30px;
+    }
+    .formul input[type="text"], input[type="email"], select,input[type="file"]{
+        width:320px;
+    }
+
+    .formul button {
+        width: 290px;
+    }
+
+    .formul form div label{
+        font-size: 20px;
+    }
+
+}
+
 
 /*for all big screens*/
 
@@ -1922,3 +2016,13 @@ input[type="file"]{
         display: none;
     }
 }
+
+
+/* For smaller screens */
+@media screen and (min-width:320px) and (max-width:801px) {
+    .main-login{
+        display: none;
+    }
+    
+}
+

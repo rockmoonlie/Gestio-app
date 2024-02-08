@@ -12,22 +12,23 @@
             <section class="top">
                 <h1>Connecté en tant qu'admin</h1>
             </section>
-            <section class="header">
-                <div class="logo_sec">
-                    <div class="logo_interface">
+            <section class="header return_add">
+                <div class="logo_sec ">
+                    <div class="logo_interface logo-add">
                         <h3>Gestio</h3>
                     </div>
-                    <div class="buttonReturn">
-                        <a href="home.html"><img src="/img/back.png" width="22" height="22" alt=""></a>
+                    <div class="buttonReturn ">
+                        <a id="forLogin" href="home.html"><img src="/img/back.png" width="22" height="22" alt=""></a>
+                        <a id="forMobile" href="home.html"><img src="/img/return.png" width="22" height="22"  alt=""></a>
                     </div>
                 </div>
             </section>
-            <section class="content">
+            <section class="content forAddStudent">
                 <section class="side_bar adding">
                     <h1>Dashboard</h1>
                     <ul>
                         <li>
-                            <img src="../img/graduation-black.png"  width="29" height="29" alt="list">
+                            <img src="../img/graduation.png"  width="29" height="29" alt="list">
                             <p><a class="colorA" href="home.html">Liste des apprenants</a></p>
                         </li>
                         <li class="space_list activons">
@@ -35,24 +36,27 @@
                             <p><a class="colorA" href="add_student.html">Ajouter un apprenant</a></p>
                         </li>
                         <li>
-                            <img src="../img/exit.png" width="25" height="25" alt="logout">
-                            <p><a class="colorA"  href="/index.html">Se déconnecter</a></p>
+                            <img src="../img/exit-white.png" width="25" height="25" alt="logout">
+                            <p><a class="colorA"  href="../index.html">Se déconnecter</a></p>
                         </li>
                     </ul>
                 </section>
-                <section class="main_content">
-                    <div class="titre">
+                <section class="main_content addStud">
+                    <div class="titre titre-add-student">
                         <h1>Ajouter un apprenant</h1>
                     </div>
                     <div class="formul">
-                        <form action="" method="post">
+                        <form action="../db.json" method="post">
                             <div>
                                 <label for="nom">Nom</label>
                             <input type="text" id="nom" name="nom">
                             </div>
                             <div>
                                 <label for="sexe">Sexe</label>
-                                <select name="sexe" id="sexe"></select>
+                                <select name="sexe" id="sexe">
+                                    <option value="Homme">Homme</option>
+                                    <option value="femme">Femme</option>
+                                </select>
                             </div>
                             <div>
                                 <label for="téléphone">Téléphone</label>
@@ -64,11 +68,18 @@
                             </div>
                             <div>
                                 <label for="filière">Filière</label>
-                                <select name="filière" id="filière"></select>
+                                <select name="filière" id="filière">
+                                    <option value="Developpeur">développeur web</option>
+                                    <option value="Referent">Référent digital</option>
+                                </select>
                             </div>
                             <div>
                                 <label for="niveau">Niveau</label>
-                                <select name="niveau" id="niveau"></select>
+                                <select name="niveau" id="niveau">
+                                    <option value="niveau1">Niveau 1</option>
+                                    <option value="niveau2">Niveau 2</option>
+                                    <option value="niveau3">Niveau 3</option>
+                                </select>
                             </div>
                             <div>
                                 <label for="extra-scolaire">Activité extra-scolaire</label>
